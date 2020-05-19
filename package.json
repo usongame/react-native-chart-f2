@@ -1,0 +1,27 @@
+{
+  "name": "react-native-chart-f2",
+  "version": "1.0.0",
+  "private": false,
+  "description": "F2 charts for react-native",
+  "main": "src/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/campcc/react-native-f2.git"
+  },
+  "keywords": [
+    "react-native",
+    "f2chart",
+    "chart",
+    "react-native-f2",
+    "react-native-chart"
+  ],
+  "author": "campcc",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/campcc/react-native-f2/issues"
+  },
+  "homepage": "https://github.com/campcc/react-native-f2#readme"
+}
