@@ -12,17 +12,17 @@
 1、
 
 ```
-yarn add react-native-f2chart or npm i react-native-f2chart
+yarn add react-native-chart-f2 or npm i react-native-chart-f2
 ```
 
-2、 copy `node_moules/react-native-f2chart/src/f2chart.html` to `android/app/src/main/assets/f2chart.html`
+2、 copy `node_moules/react-native-chart-f2/src/f2chart.html` to `android/app/src/main/assets/f2chart.html`
 
 simple demo [example](example)
 
 ## usage
 
 ```js
-import Chart from "react-native-f2chart";
+import Chart from "react-native-chart-f2";
 
 // 参考 https://antv.alipay.com/zh-cn/f2/3.x/demo/line/basic.html
 const initScript = data =>`
