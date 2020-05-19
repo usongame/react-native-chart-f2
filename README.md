@@ -1,4 +1,4 @@
-# react-native-f2chart
+# react-native-chart-f2
 
 [F2](https://antv.alipay.com/zh-cn/f2/3.x/index.html) charts for react-native
 
