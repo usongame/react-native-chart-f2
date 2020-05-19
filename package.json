@@ -9,7 +9,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/campcc/react-native-f2.git"
+    "url": "git+https://github.com/campcc/react-native-chart-f2.git"
   },
   "keywords": [
     "react-native",
@@ -21,7 +21,7 @@
   "author": "campcc",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/campcc/react-native-f2/issues"
+    "url": "https://github.com/campcc/react-native-chart-f2/issues"
   },
-  "homepage": "https://github.com/campcc/react-native-f2#readme"
+  "homepage": "https://github.com/campcc/react-native-chart-f2#readme"
 }
