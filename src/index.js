@@ -29,22 +29,21 @@ export default class Chart extends PureComponent<Props> {
     this.chart = createRef();
   }
 
-  componentDidUpdate(nextProps) {
+  componentDidUpdate = (nextProps) => {
     const { data, orientation } = this.props;
     if (data !== nextProps.data) {
       this.update(nextProps.data);
     }
     if (orientation !== nextProps.orientation) {
-      this.chart.current.injectJavaScript('chart.changeSize()');
       this.reload();
     }
-  }
+  };
 
   update = (data) => this.chart.current.injectJavaScript(changeData(data));
 
   repaint = (script) => this.chart.current.injectJavaScript(script);
 
-  reload = () => this.chart.current.reload();
+  reload = () => setTimeout(() => this.chart.current.reload(), 1);
 
   onMessage = (event) => {
     const {
@@ -55,9 +54,10 @@ export default class Chart extends PureComponent<Props> {
     onChange(tooltip);
   };
 
-  componentDidMount() {
-    setTimeout(() => this.reload());
-  }
+  componentDidMount = () => {
+    const { startInLoadingState = false } = this.props;
+    if (startInLoadingState) this.reload();
+  };
 
   render() {
     const { webView: WebView, data, onChange, initScript, ...props } = this.props;
@@ -65,7 +65,6 @@ export default class Chart extends PureComponent<Props> {
       <WebView
         javaScriptEnabled
         ref={this.chart}
-        scrollEnabled={false}
         style={styles.webView}
         injectedJavaScript={initScript}
         source={source}
